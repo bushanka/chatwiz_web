@@ -29,7 +29,7 @@ export const chatsApi = rtkApi.injectEndpoints({
     chat: builder.query<ChatInfo, number>({
       query: (id) => ({
         url: '/chats/get_chatinfo/',
-        method: 'POST',
+        method: 'GET',
         params: {
           chat_id: id,
         }
